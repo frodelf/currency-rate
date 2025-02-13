@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: currency-rate
+  r2dbc:
+    url:
+    username:
+    password:
+  sql:
+    init:
+      mode: always
+server:
+  port: 8081

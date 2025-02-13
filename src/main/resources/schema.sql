@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS currency (
+    id BIGSERIAL PRIMARY KEY ,
+    currency_code VARCHAR UNIQUE NOT NULL,
+    type VARCHAR CHECK (type IN ('FIAT', 'CRYPTO')),
+    rate DECIMAL NOT NULL
+);
